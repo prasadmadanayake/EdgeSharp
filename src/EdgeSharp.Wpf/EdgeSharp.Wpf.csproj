@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <LangVersion>latest</LangVersion>
-    <TargetFrameworks>net461;net6.0-windows</TargetFrameworks>
+    <TargetFrameworks>net7.0-windows</TargetFrameworks>
     <Platforms>AnyCPU</Platforms>
     <UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -11,6 +11,13 @@
     <DebugSymbols>true</DebugSymbols>
     <EmbedAllSources>true</EmbedAllSources>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Description>The base/core library required to build EdgeSharp Win32, WinForms, WPF applications. Requires Microsoft.Web.WebView2 minimum SDK Version 1.0.2277.86. Changed all of the pre-release rependecies to stable deps</Description>
+    <PackageProjectUrl>https://github.com/prasadmadanayake/EdgeSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/prasadmadanayake/EdgeSharp</RepositoryUrl>
+    <Version>0.9.1</Version>
+    <FileVersion>0.9.1</FileVersion>
+    <AssemblyVersion>0.9.1</AssemblyVersion>
+    <PackageId>Ext.$(AssemblyName)</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -19,7 +26,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.865-prerelease" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2277.86" />
   </ItemGroup>
   
   <ItemGroup>

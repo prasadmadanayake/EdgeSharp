@@ -20,7 +20,7 @@ namespace EdgeSharp.Core
         Uri Source { get; set; }
         /// <summary>
         /// Gets or sets the zoom factor for the WebView.
-        /// </summary
+        /// </summary>
         double ZoomFactor { get; set; }
         /// <summary>
         /// Gets or sets the default background color for the WebView.
